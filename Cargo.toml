@@ -1,0 +1,12 @@
+[package]
+name = "joyfull-mouse"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+# mouse-rs = { git = "https://github.com/AltF02/mouse-rs.git" }
+inputbot = { git = "https://github.com/obv-mikhail/InputBot.git" }
+tokio = { version = "1", features = ["full", "rt"] }
+sn30pro = "*"
