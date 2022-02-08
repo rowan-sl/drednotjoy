@@ -82,7 +82,6 @@ async fn main() {
                 KeybdKey::SpaceKey.release();
             }
             let l_joy = ct.l_joy();
-            println!("{:?}", l_joy);
             if l_joy.x > 0 {
                 KeybdKey::WKey.press();
                 w_pressed = true;
