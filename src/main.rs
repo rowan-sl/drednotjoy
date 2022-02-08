@@ -2,7 +2,7 @@ use sn30pro::Controller;
 use std::fmt::Debug;
 use std::time::Duration;
 use tokio::sync::mpsc::{self, error::TryRecvError, Receiver, Sender};
-use inputbot::{KeybdKey, MouseButton, MouseCursor, MouseWheel, self};
+use inputbot::{KeybdKey, MouseButton, MouseCursor, self};
 
 enum MoveEvent {
     MoveDirectionUpdate(i16, i16),
@@ -28,7 +28,7 @@ async fn main() {
                         // println!("{} {}", x, y);
                         move_direction = (y as i32, -x as i32);
                     }
-                    MoveEvent::ScrollAmntUpdate(s) => {
+                    MoveEvent::ScrollAmntUpdate(_s) => {
                         //TODO
                         // ignore for now because its NOT IMPLEMENTED REEEEEEEEEEEEEEEEe
                         // MouseWheel::scroll_ver(-s as i32);

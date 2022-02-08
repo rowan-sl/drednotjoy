@@ -1,7 +1,8 @@
 [package]
-name = "joyfull-mouse"
+name = "drednotjoy"
 version = "0.1.0"
 edition = "2021"
+authors = ["Rowan S-L <r@fawkes.io>"]
 
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
